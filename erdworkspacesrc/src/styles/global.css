@@ -1,0 +1,20 @@
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{font-family:var(--erd-font-family);color:var(--erd-color-text);background:var(--erd-color-bg-layout)}
+#root{height:100%}
+::-webkit-scrollbar{width:9px;height:9px}
+::-webkit-scrollbar-thumb{background:rgba(0,0,0,.14);border-radius:5px}
+::-webkit-scrollbar-track{background:transparent}
+textarea,input,select,button{font-family:inherit}
+
+/* interactive hover states (ported from the prototype) */
+.erd-navrow:hover{background:var(--erd-color-fill-tertiary)!important}
+.erd-tile:hover{border-color:var(--erd-color-primary-border)!important;box-shadow:0 2px 8px rgba(0,0,0,.06)!important}
+.erd-icon-btn:hover{box-shadow:inset 0 0 0 999px rgba(0,0,0,.05)!important}
+.erd-fav-remove:hover{color:var(--erd-color-error)!important;background:var(--erd-color-error-bg)!important}
+.erd-star:hover{transform:scale(1.15)}
+.erd-prompt:hover{background:var(--erd-color-fill-tertiary)!important;border-color:var(--erd-color-primary-border)!important}
+
+.erd-spin{display:inline-block;animation:erd-rot 1s linear infinite}
+@keyframes erd-rot{to{transform:rotate(360deg)}}
+@keyframes erd-tc-spin{to{transform:rotate(360deg)}}

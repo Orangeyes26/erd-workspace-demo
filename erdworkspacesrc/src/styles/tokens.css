@@ -1,0 +1,69 @@
+/* ============================================================================
+   Design tokens — merged from the two bound design systems:
+   · eRD AI Chat  (Ant Design v5 seed, --erd-* namespace)
+   · eRD Charting (IBM Plex + Ant palette, --text/--signal/--space/... namespace)
+   ============================================================================ */
+:root {
+  /* ---- eRD AI Chat: brand (Ant "Daybreak Blue") ---- */
+  --erd-blue-1:#e6f4ff; --erd-blue-2:#bae0ff; --erd-blue-3:#91caff; --erd-blue-4:#69b1ff;
+  --erd-blue-5:#4096ff; --erd-blue-6:#1677ff; --erd-blue-7:#0958d9; --erd-blue-8:#003eb3;
+  --erd-blue-9:#002c8c; --erd-blue-10:#001d66;
+  --erd-color-primary:var(--erd-blue-6);
+  --erd-color-primary-bg:var(--erd-blue-1);
+  --erd-color-primary-bg-hover:var(--erd-blue-2);
+  --erd-color-primary-border:var(--erd-blue-3);
+  --erd-color-primary-border-hover:var(--erd-blue-4);
+  --erd-color-primary-hover:var(--erd-blue-5);
+  --erd-color-primary-active:var(--erd-blue-7);
+
+  /* ---- eRD AI Chat: semantic ---- */
+  --erd-color-success:#52c41a; --erd-color-success-bg:#f6ffed; --erd-color-success-border:#b7eb8f;
+  --erd-color-warning:#faad14; --erd-color-warning-bg:#fffbe6; --erd-color-warning-border:#ffe58f;
+  --erd-color-error:#ff4d4f; --erd-color-error-bg:#fff2f0; --erd-color-error-border:#ffccc7;
+  --erd-color-info:var(--erd-blue-6); --erd-color-link:var(--erd-blue-6);
+
+  /* ---- eRD AI Chat: neutral text / fills / surfaces ---- */
+  --erd-color-text:rgba(0,0,0,0.88);
+  --erd-color-text-secondary:rgba(0,0,0,0.65);
+  --erd-color-text-tertiary:rgba(0,0,0,0.45);
+  --erd-color-text-quaternary:rgba(0,0,0,0.25);
+  --erd-color-fill:rgba(0,0,0,0.15);
+  --erd-color-fill-secondary:rgba(0,0,0,0.06);
+  --erd-color-fill-tertiary:rgba(0,0,0,0.04);
+  --erd-color-fill-quaternary:rgba(0,0,0,0.02);
+  --erd-color-bg-base:#fff; --erd-color-bg-container:#fff; --erd-color-bg-elevated:#fff;
+  --erd-color-bg-layout:#f5f5f5; --erd-color-bg-mask:rgba(0,0,0,0.45);
+  --erd-color-border:#d9d9d9; --erd-color-border-secondary:#f0f0f0;
+
+  /* ---- eRD AI Chat: chat bubbles ---- */
+  --erd-bubble-user-bg:var(--erd-blue-6); --erd-bubble-user-text:#fff;
+  --erd-bubble-ai-bg:var(--erd-color-fill-tertiary); --erd-bubble-ai-text:var(--erd-color-text);
+  --erd-bubble-radius:16px;
+
+  /* ---- eRD AI Chat: type / radius / shadow / motion ---- */
+  --erd-font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  --erd-font-family-code:"IBM Plex Mono","SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  --erd-font-size-sm:12px; --erd-font-size-base:14px; --erd-font-size-lg:16px;
+  --erd-font-weight-medium:500; --erd-font-weight-strong:600;
+  --erd-radius-xs:2px; --erd-radius-sm:4px; --erd-radius:6px; --erd-radius-lg:8px;
+  --erd-radius-xl:16px; --erd-radius-pill:999px;
+  --erd-shadow-tertiary:0 1px 2px 0 rgba(0,0,0,0.03),0 1px 6px -1px rgba(0,0,0,0.02),0 2px 4px 0 rgba(0,0,0,0.02);
+  --erd-shadow-composer:0 2px 12px rgba(0,0,0,0.06);
+  --erd-motion-mid:0.2s cubic-bezier(0.645,0.045,0.355,1);
+
+  /* ---- eRD Charting: type ---- */
+  --font-sans:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --text-2xs:10px; --text-xs:11px; --text-sm:12px; --text-base:13px; --text-md:15px;
+  --text-lg:18px; --text-xl:22px; --text-2xl:28px; --text-3xl:36px; --text-4xl:48px;
+  --weight-regular:400; --weight-medium:500; --weight-semibold:600; --weight-bold:700;
+  --tracking-caps:0.06em;
+
+  /* ---- eRD Charting: space / radius / surface / signal ---- */
+  --space-1:2px; --space-2:4px; --space-3:6px; --space-4:8px; --space-5:12px; --space-6:16px;
+  --radius-md:6px; --hairline:1px;
+  --surface-card:#fff; --border-subtle:#f0f0f0;
+  --text-primary:rgba(0,0,0,0.88); --text-secondary:rgba(0,0,0,0.65); --text-muted:rgba(0,0,0,0.45);
+  --signal-pass:#52c41a; --signal-fail:#ff4d4f; --signal-warn:#faad14;
+  --shadow-sm:0 1px 2px rgba(19,25,32,0.06),0 1px 1px rgba(19,25,32,0.04);
+}
